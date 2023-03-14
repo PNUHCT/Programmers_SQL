@@ -1,0 +1,8 @@
+-- USER_INFO 테이블에서 : FROM
+-- 2021년에 가입한 회원 중 : LIKE
+-- 나이가 20세 이상 29세 이하인 회원 : 범위 + AND
+-- 몇 명인지 출력하는 SQL문 : SELECT COUNT()
+
+SELECT COUNT(USER_ID) USERS
+FROM USER_INFO UI
+WHERE AGE>=20 AND AGE<=29 AND JOINED LIKE "2021%"
